@@ -130,9 +130,9 @@ const Hero = () => {
                             delay: 0.3
                         }}
                     >
-                        <button>
+                        <a href='mailto:souravvmishra@hmail.com'>
                             <GetStartedBtn text={"Let's Work"} />
-                        </button>
+                        </a>
                     </motion.div>
                 </div>
                 <div className='hidden md:block relative  w-[50%] aspect-square overflow-hidden  blurshadow '>

@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import { slideUp } from '@/animations/animations'
 
 const list = [
     {
@@ -40,29 +41,11 @@ const Sliding = () => {
     const x = useTransform(scrollYProgress, [0.1, 1], ['100%', '-800%'])
     const x2 = useTransform(scrollYProgress, [0.1, 1], ['-500%', '200%'])
 
-    const variants = {
-        initial: {
-            y: 50,
-            opacity: 0,
-        },
-        animate: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration: 0.3,
-                type: "spring",
-                stiffness: 25,
-                staggerChildren: 0.3,
-            },
-
-        },
-    };
-
     return (
         <div className='my-12 overflow-hidden -mx-4 sm:-mx-8 md:-mx-12 lg:-mx-16 xl:-mx-32 py-12'>
             <motion.div
                 ref={containerRef}
-                variants={variants}
+                variants={slideUp}
                 initial={'initial'}
                 whileInView={'animate'}
             >

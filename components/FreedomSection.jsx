@@ -73,6 +73,7 @@ const FreedomSection = () => {
                     <motion.div variants={scaleUp} className='absolute bottom-24 -right-14 z-10 text-black origin-center'>
                         <Image src={'/starsSvg.svg'} alt='music bot' width={150} height={150} />
                     </motion.div>
+
                 </motion.div>
 
                 <motion.div

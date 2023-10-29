@@ -40,7 +40,7 @@ const reviews = [
 ];
 
 const Card = ({ review }) => (
-    <motion.div variants={slideUp} className="px-3 md:w-1/3 inline-block hover:scale-105 duration-300 cursor-pointer ">
+    <motion.div variants={slideUp} whileHover={{scale : 1.08}} className="px-3 md:w-1/3 inline-block duration-300 cursor-pointer ">
         <div className=" mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6 shadow-lg">
             <div className="w-full flex mb-4 items-center">
                 <motion.div variants={slideUp} className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
