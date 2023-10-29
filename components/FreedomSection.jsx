@@ -93,8 +93,12 @@ const FreedomSection = () => {
                     <motion.div
                         variants={variants}
                         className='w-1/2 flex justify-between py-14'>
-                        <motion.span variants={variants}><GetStartedBtn text={"Get Started"} /></motion.span>
-                        <motion.span variants={variants}><GetStartedBtn text={"Get Started"} /></motion.span>
+                        <motion.span variants={variants}>
+                            <GetStartedBtn text={"Get Started"} />
+                        </motion.span>
+                        <motion.span variants={variants}>
+                            <GetStartedBtn text={"Get Started"} />
+                        </motion.span>
                     </motion.div>
 
                     <motion.div
@@ -137,7 +141,7 @@ const FreedomSection = () => {
                         </motion.div>
                     </motion.div>
                 </motion.div>
-            
+
             </div>
         </div>
 
