@@ -11,16 +11,16 @@ import Navbar from './Navbar'
 
 const list = [
     {
-        image: '/image.jpg'
+        image: '/souravMishra02.jpg'
     },
     {
-        image: '/image.jpg'
+        image: '/souravMishra01.jpg'
     },
     {
-        image: '/image.jpg'
+        image: '/souravMishra02.jpg'
     },
     {
-        image: '/image.jpg'
+        image: '/souravMishra01.jpg'
     },
 ]
 
@@ -51,9 +51,9 @@ const Hero = () => {
     return (
         <div ref={containerRef} className='h-screen'>
             <Navbar />
-            <div className='w-full flex justify-between items-center'>
+            <div className='w-full flex pt-32 md:pt-0 justify-between items-center '>
 
-                <div className='md:w-2/5 w-full'>
+                <div className='md:w-2/5 w-full bg-[url(/gifs/heroTextBg.gif)] bg-clip-text text-transparent'>
                     <motion.div
                         initial={{
                             y: 25,
@@ -90,7 +90,7 @@ const Hero = () => {
                             stiffness: 25,
                             delay: 0.1
                         }}
-                        className='text-7xl lg:text-8xl font-extrabold text-transparent bg-gradient-to-r from-blue-500 to-blue-800 bg-clip-text'>
+                        className='text-7xl lg:text-8xl font-extrabold'>
                         Mishra
                     </motion.div>
                     <motion.div
@@ -110,8 +110,8 @@ const Hero = () => {
                             stiffness: 25,
                             delay: 0.2
                         }}
-                        className=' text-xl lg:text-2xl font-sans py-6 text-slate-600'>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque nisi at? Sapiente repudipe aspernatur nisi, error deleniti
+                        className=' text-base lg:text-xl font-sans py-6 text-slate-800 font-semibold'>
+                        Hi 👋, I’m <span className='underline decoration-emerald-500 font-semibold decoration-dotted decoration-2'>Sourav Mishra</span>, a web and web app developer who loves to create. I build responsive, user-friendly, and accessible websites and web applications that solve real-world problems. I’m always eager to learn new things and challenge myself.
                     </motion.div>
                     <motion.div
                         initial={{
@@ -129,9 +129,10 @@ const Hero = () => {
                             stiffness: 25,
                             delay: 0.3
                         }}
+                        className='w-1/2'
                     >
                         <a href='mailto:souravvmishra@hmail.com'>
-                            <GetStartedBtn text={"Let's Work"} />
+                            <GetStartedBtn text={"Let's Work Together"} />
                         </a>
                     </motion.div>
                 </div>

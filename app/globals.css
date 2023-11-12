@@ -88,17 +88,15 @@
 
 
 .grow {
-  animation: scaleUp 4s infinite;
+  animation: scaleUp 1s infinite ;
 }
 
 @keyframes scaleUp {
   0% {
-    width: 0;
-    filter: blur(0px);
+    border-width: 0;
   }
 
   100% {
-    width: 500%;
-    filter: blur(1px);
+    border-width: 10px;
   }
 }

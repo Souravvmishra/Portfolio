@@ -49,7 +49,7 @@ const Sliding = () => {
                 initial={'initial'}
                 whileInView={'animate'}
             >
-                <div className='text-5xl  font-bold w-1/3 mx-auto mb-20'>
+                <div className='text-5xl  font-black drop-shadow-md md:w-1/2 mx-auto mb-20 px-4 sm:px-8 md:px-12 lg:px-16 xl:px-32'>
                     <motion.h3 className='drop-shadow-xl' >Over 5000+ products available
                         <span className='pl-4 text-blue-600'>to check</span>
                     </motion.h3>

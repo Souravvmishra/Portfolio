@@ -68,7 +68,7 @@ const TheBestPlatform = () => {
                     variants={slideUp}
                     initial={'initial'}
                     whileInView={'animate'}
-                    className='w-1/2 mx-auto'>
+                    className='md:w-1/2 mx-auto'>
                     <motion.h3
                         variants={slideUp}
                         className='text-6xl font-bold mx-auto'>The Best Platform</motion.h3>
@@ -80,12 +80,12 @@ const TheBestPlatform = () => {
 
                 <div className='py-12'>
                     <motion.div
-                        className='flex space-x-4 h-64'>
+                        className='md:flex space-x-4 h-64'>
                         <motion.div
                             variants={leftSlide}
                             initial={'initial'}
                             whileInView={'animate'}
-                            className='w-2/5 bg-purple-100 text-purple-800 aspect-video rounded-xl p-8'>
+                            className='md:w-2/5 bg-purple-100 text-purple-800 aspect-video rounded-xl p-8'>
                             <motion.p variants={leftSlide} className='text-lg font-semibold'>Adaption for any devices</motion.p>
                             <motion.p variants={leftSlide} className='text-4xl font-sans font-bold py-4'>View all profucts with your browser</motion.p>
                         </motion.div>
@@ -93,7 +93,7 @@ const TheBestPlatform = () => {
                             variants={topSlide}
                             initial={'initial'}
                             whileInView={'animate'}
-                            className='w-3/5 bg-red-100 text-red-800 aspect-video rounded-xl p-8 relative'>
+                            className='md:w-3/5 bg-red-100 text-red-800 aspect-video rounded-xl p-8 relative'>
                             <motion.p variants={topSlide} className='text-lg font-semibold'>Stories</motion.p>
                             <motion.p variants={topSlide} className='text-4xl font-sans font-bold py-4 w-2/3'>Lorem ipsum dolor sit amet consectetur.</motion.p>
                             <Image
@@ -105,7 +105,7 @@ const TheBestPlatform = () => {
                             />
                         </motion.div>
                     </motion.div>
-                    <div className='flex space-x-4 h-64 my-4'>
+                    <div className='md:flex space-x-4 h-64 my-4'>
                         <motion.div
                             variants={slideUp}
                             initial={'initial'}

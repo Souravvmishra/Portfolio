@@ -48,7 +48,7 @@ const FreedomSection = () => {
 
     return (
         <div className=''>
-            <div className='py-24 flex items-start justify-between relative'>
+            <div className='py-24 flex flex-col md:flex-row items-start justify-between relative'>
 
                 <div className='w-full h-[65%] bg-gradient-to-r from-transparent to-purple-100 absolute -z-10 mx-4 sm:mx-8 md:mx-12 lg:mx-16 xl:mx-32 top-12' />
 
@@ -56,7 +56,7 @@ const FreedomSection = () => {
                     variants={scaleUp}
                     initial={'initial'}
                     whileInView={'animate'}
-                    className='w-1/3 object-contain rounded-3xl  relative'>
+                    className='md:w-1/3 object-contain rounded-3xl  relative'>
                     <motion.div
                         variants={scaleUp}
                     >
@@ -80,31 +80,31 @@ const FreedomSection = () => {
                     variants={variants}
                     initial='initial'
                     whileInView='animate'
-                    className='w-1/2 h-full '>
+                    className='md:w-1/2 h-full '>
                     <motion.p
                         variants={variants}
-                        className='text-7xl font-bold py-4'>
+                        className='text-5xl w-screen md:w-auto md:text-7xl font-bold py-4'>
                         Freedom for your creative ideas.
                     </motion.p>
                     <motion.p
                         variants={variants}
-                        className='text-xl text-gray-500 py-4'>
+                        className='text-xl whitespace-pre-wrap text-gray-500 py-4'>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur iure nemo quibusdam unde. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis rerum numquam nulla labore?
                     </motion.p>
                     <motion.div
                         variants={variants}
-                        className='w-1/2 flex justify-between py-14'>
-                        <motion.span variants={variants}>
+                        className='w-1/2 flex flex-col md:flex-row justify-between py-14'>
+                        <motion.span variants={variants} className='my-2 mr-2'>
                             <GetStartedBtn text={"Get Started"} />
                         </motion.span>
-                        <motion.span variants={variants}>
+                        <motion.span variants={variants} className='my-2 ml-2'>
                             <GetStartedBtn text={"Get Started"} />
                         </motion.span>
                     </motion.div>
 
                     <motion.div
                         variants={variants}
-                        className='flex justify-between items-center py-6'>
+                        className='flex justify-between flex-col md:flex-row items-start md:items-center gap-6 py-6'>
                         <motion.div
                             variants={variants}
                             className='font-bold flex justify-center items-center'>
